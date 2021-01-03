@@ -1,0 +1,7 @@
+build/*
+node_modules
+logs
+run
+dist/*
+/**/*.md
+/**/*.d.ts

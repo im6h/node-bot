@@ -1,0 +1,27 @@
+root: true
+parser: babel-eslint
+extends:
+  - prettier
+  - eslint:recommended
+plugins:
+  - prettier
+env:
+  browser: true
+  node: true
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
+  allowImportExportEverywhere: false
+  ecmaFeatures:
+    globalReturn: true
+    modules: true
+
+rules:
+  prettier/prettier:
+    - error
+    - no-unused-vars: 'warn'
+      no-console: warn
+      no-debbuger: warn
+      printWidth: 80
+      trailingComma: all
+      semi: true
