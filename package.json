@@ -1,5 +1,5 @@
 {
-  "name": "expressts",
+  "name": "discorbot",
   "version": "1.0.0",
   "description": "A bot build with nodejs",
   "main": "dist/index.js",
@@ -48,4 +48,5 @@
       "pre-commit": "yarn lint"
     }
   }
+}
 }
