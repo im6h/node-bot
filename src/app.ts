@@ -2,6 +2,6 @@ import { main } from './main';
 import { PORT } from './config/config';
 
 const start = () => {
-  console.log(`🕵  Server️ running on link: http://localhost:${PORT}‍`);
+  console.log(`🕵 Server running on port:${PORT}`);
 };
 main.listen(PORT, start);

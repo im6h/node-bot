@@ -4,9 +4,9 @@
   "description": "A bot build with nodejs",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node ./dist/app.js",
+    "start": "node dist/app.js",
     "start:dev": "node --inspect=8000 -r ts-node/register ./src/app.ts",
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
     "dev": "nodemon",
     "lint": "eslint './src/**/*.{ts, js}'",
     "lint:fix": "eslint './src/**/*.{ts, js}' --fix",
@@ -48,5 +48,4 @@
       "pre-commit": "yarn lint"
     }
   }
-}
 }
