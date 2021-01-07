@@ -28,7 +28,7 @@ build:
     # Save built image to Container registry under branch name tag and commit hash tag
     - docker push "$DOCKER_IMAGE"
     - docker tag "$DOCKER_IMAGE" "$DOCKER_CACHE_IMAGE"
-    - docker push "$DOCKER_CACHE_IMAGE"
+    - docker push "$DOCKER_CA CHE_IMAGE"
   only:
     - deploy
 
